@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+function dogo(){
+  var urls = new Array();
+  var max=3;
+  var min=0;
+  urls[0] = "cosmetic/time pressure_yes/scenario_introduction_1.html";
+  urls[1] = "cosmetic/time pressure_no/scenario_introduction_2.html";
+  urls[2] = "3C/time pressure_yes/scenario_introduction_3.html";
+  urls[3] = "3C/time pressure_no/scenario_introduction_4.html";
+  n = Math.floor(Math.random() * (max - min + 1) + min);
+  location.href= urls[n];
+}
+
+dogo();
+</script>
+</body>
+</html>
